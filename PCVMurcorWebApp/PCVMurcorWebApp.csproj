@@ -13,7 +13,6 @@
   <ItemGroup>
     <Folder Include="Views\Manager\" />
     <Folder Include="Views\Account\" />
-    <Folder Include="Views\User\" />
   </ItemGroup>
 
 </Project>

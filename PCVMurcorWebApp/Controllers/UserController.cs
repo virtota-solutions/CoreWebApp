@@ -12,13 +12,26 @@ namespace PCVMurcorWebApp.Controllers
         {
             return View();
         }
+        [HttpGet, Route ("create")]
         public IActionResult Create()
         {
             return View();
         }
-        public IActionResult Post()
+        [HttpPost, Route ("create")]
+        public IActionResult Create(CreatePostRequest post)
         {
             return View();
+        }
+
+        public class CreatePostRequest
+        {
+            public int UserId { get; set; }
+            public string Name { get; set; }
+            public string Department { get; set; }
+            public string Office { get; set; }
+            public string ManagerName { get; set; }
+            public bool IsManager { get; set; }
+            public string UserStatus { get; set; }
         }
     }
 }
