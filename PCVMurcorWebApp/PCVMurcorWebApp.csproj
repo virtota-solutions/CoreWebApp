@@ -15,4 +15,7 @@
     <Folder Include="Views\Account\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="Views\Home\Login.cshtml" />
+  </ItemGroup>
 </Project>
