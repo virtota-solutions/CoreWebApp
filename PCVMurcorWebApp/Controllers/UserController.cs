@@ -10,18 +10,18 @@ namespace PCVMurcorWebApp.Controllers
     {
         public IActionResult Index()
         {
+           
             return View();
         }
-        [HttpGet, Route ("create")]
+
+        
+
+        [Route ("create")]
         public IActionResult Create()
         {
             return View();
         }
-        [HttpPost, Route ("create")]
-        public IActionResult Create(CreatePostRequest post)
-        {
-            return View();
-        }
+        
 
         public class CreatePostRequest
         {

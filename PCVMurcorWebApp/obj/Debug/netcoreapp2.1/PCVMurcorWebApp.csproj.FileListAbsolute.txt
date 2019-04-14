@@ -30,3 +30,4 @@ C:\Users\curti\Desktop\PCVMurcorWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\P
 C:\Users\curti\Desktop\PCVMurcorWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\PCVMurcorWebApp.dll
 C:\Users\curti\Desktop\PCVMurcorWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\PCVMurcorWebApp.pdb
 C:\Users\curti\Desktop\PCVMurcorWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\PCVMurcorWebApp.csproj.CopyComplete
+C:\Users\curti\Desktop\PCVMurcorWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\Razor\Views\User\create.g.cshtml.cs

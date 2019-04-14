@@ -1,14 +1,12 @@
-﻿@model PCVMurcorWebApp.Models.Post
-@{
+﻿@{
     Layout = "_Layout";
 }
 
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-4">
-            @using (Html.BeginForm())
-            {
-            <form class="form-horizontal" action="post">
+            
+            <form class="form-horizontal" asp-action="/User/Create" method="post">
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="Name">Name:</label>
                     <div class="col-sm-10">
@@ -70,16 +68,11 @@
                     </div>
                 </div>
             </form>
-            }
+            
         </div>
         <div class="col-4">
             
         </div>
     </div>
  </div>
-    <h1>User Request Form</h1>
-
-    <fieldset>
-        
-    </fieldset>
 
