@@ -1,4 +1,5 @@
-﻿
+﻿@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@model PCVMurcorWebApp.Models.Account.LoginViewModel
 
 <html>
 <head>
@@ -21,21 +22,40 @@
                             </a>
                         </div>
                         <br>
-                        <form class="form-signin">
+                        <form class="form-signin" role="form" asp-action="Login">
                             <div class="form-label-group">
-                                <input type="email" id="inputEmail" class="form-control" placeholder="  Username" required autofocus>
-                                <label for="inputEmail">Username</label>
+                                <input type="email" id="inputEmail" asp-for="EmailAddress" class="form-control" placeholder="  Username" required autofocus>
+                                <label asp-for="EmailAddress">Email Address</label>
+                                <span asp-validation-for="EmailAddress" class="field-validation-error"></span>
                             </div>
 
                             <div class="form-label-group">
-                                <input type="password" id="inputPassword" class="form-control" placeholder="  Password" required>
-                                <label for="inputPassword">Password</label>
+                                <input type="password" id="inputPassword" asp-for="Password" class="form-control" placeholder="  Password" required>
+                                <label for="inputPassword" asp-for="Password">Password</label>
+                                <span asp-validation-for="Password" class="field-validation-error"></span>
+                            </div>
+                            <div class="form-label-group">
+                                <label asp-for="ConfirmPassword"></label>
+                                <input type="password" asp-for="ConfirmPassword" class="form-control" />
+                                <span asp-validation-for="ConfirmPassword" class="field-validation-error"></span>
+                            </div>
+
+                            <div class="form-label-group">
+                                <label asp-for="RememberMe"></label>
+                                <input type="checkbox" asp-for="RememberMe" />
+                                <span asp-validation-for="RememberMe" class="field-validation-error"></span>
                             </div>
 
                             <button class="btn btn-lg btn-login btn-block text-uppercase" type="submit">Login</button>
                             <br>
                             <a href="index.html">Forgot Password?</a>
                         </form>
+                        <br />
+
+                        <div class="form-group">
+                            <label>Not Registered?</label>
+                            <a asp-action="Register">Create a new account</a>
+                        </div>
                     </div>
                 </div>
             </div>
