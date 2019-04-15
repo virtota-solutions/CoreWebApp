@@ -17,11 +17,12 @@ namespace PCVMurcorWebApp.Models
 
 
         public string Name { get; set; }
+        public string JobTitle { get; set; }
         public string Department { get; set; }
         public string Office { get; set; }
         public string ManagerName { get; set; }
         public bool IsManager { get; set; }
-        public string UserStatus { get; set; }
+
 
         public int FloorNum { get; set; }
         public int CubeNum { get; set; }
