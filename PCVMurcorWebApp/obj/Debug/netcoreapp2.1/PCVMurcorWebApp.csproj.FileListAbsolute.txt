@@ -102,3 +102,4 @@ C:\Users\curti\Desktop\PCV\CoreWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\PC
 C:\Users\curti\Desktop\PCV\CoreWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\PCVMurcorWebApp.dll
 C:\Users\curti\Desktop\PCV\CoreWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\PCVMurcorWebApp.pdb
 C:\Users\curti\Desktop\PCV\CoreWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\PCVMurcorWebApp.csproj.CopyComplete
+C:\Users\curti\Desktop\PCV\CoreWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\PCVMurcorWebApp.csprojAssemblyReference.cache
