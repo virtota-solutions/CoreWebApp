@@ -3,53 +3,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using PCVMurcorWebApp.Models;
 
 namespace PCVMurcorWebApp.Controllers
 {
+    [Route ("user")]
     public class UserController : Controller
     {
         public IActionResult Index()
         {
-           
             return View();
         }
 
         
 
         [Route ("create")]
-        public IActionResult Create()
+        public IActionResult Create(Create create)
         {
             return View();
         }
 
-        [Route ("Post")]
-        public IActionResult Post(CreatePostRequest cpr)
+        [Route ("post")]
+        public IActionResult Post(Create c, UserRequirements ur, UserInfo ui)
         {
             return View();
         }
 
-        [Route ("Requirements")]
-        public IActionResult Requirements()
+        [Route ("requirements")]
+        public IActionResult Requirements(UserRequirements ur)
         {
             return View();
         }
 
-        [Route ("UserInformation")]
-        public IActionResult UserInformation()
+        [Route ("userinformation")]
+        public IActionResult UserInformation(UserInfo ui)
         {
             return View();
         }
         
-
-        public class CreatePostRequest
-        {
-            public int UserId { get; set; }
-            public string Name { get; set; }
-            public string Department { get; set; }
-            public string Office { get; set; }
-            public string ManagerName { get; set; }
-            public bool IsManager { get; set; }
-            public string UserStatus { get; set; }
-        }
     }
 }
