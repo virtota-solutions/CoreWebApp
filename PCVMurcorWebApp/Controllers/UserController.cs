@@ -17,11 +17,13 @@ namespace PCVMurcorWebApp.Controllers
 
         
 
-        [Route ("create")]
-        public IActionResult Create(Create create)
+        [ Route ("create")]
+        public IActionResult Create()
         {
             return View();
         }
+
+        
 
         [Route ("post")]
         public IActionResult Post(Create c, UserRequirements ur, UserInfo ui)
