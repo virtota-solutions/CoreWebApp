@@ -17,5 +17,13 @@
 
   <ItemGroup>
     <Content Remove="Views\Home\Login.cshtml" />
+    <Content Remove="Views\Home\Error.cshtml" />
+    <Content Remove="Views\Home\Error.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\Home\Error.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </None>
   </ItemGroup>
 </Project>
