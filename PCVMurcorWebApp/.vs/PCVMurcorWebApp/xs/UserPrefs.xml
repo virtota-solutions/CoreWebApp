@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.PCVMurcorWebApp PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Views/User/UserInformation.cshtml">
     <Files>
-      <File FileName="Views/User/UserInformation.cshtml" Line="14" Column="17" />
+      <File FileName="Views/User/UserInformation.cshtml" Line="6" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
