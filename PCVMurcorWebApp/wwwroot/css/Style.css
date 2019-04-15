@@ -140,22 +140,3 @@ a:hover {
 a:active {
     color: #CCA43B;
 }
-
-.nav-tabs {
-    background: #1B295B;
-    color: white;
-}
-.nav-link active {
-    background: #CCA43B;
-    color: black;
-}
-
-#itemNav{
-    color: #CCA43B;
-}
-.nav-link {
-    background: #1B295B;
-}
-.nav-item {
-    color: #CCA43B;
-}
