@@ -22,8 +22,20 @@ namespace PCVMurcorWebApp.Controllers
             return View();
         }
 
-        [Route ("post")]
+        [Route ("Post")]
         public IActionResult Post(CreatePostRequest cpr)
+        {
+            return View();
+        }
+
+        [Route ("Requirements")]
+        public IActionResult Requirements()
+        {
+            return View();
+        }
+
+        [Route ("UserInformation")]
+        public IActionResult UserInformation()
         {
             return View();
         }
