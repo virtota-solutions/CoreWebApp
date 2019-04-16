@@ -67,12 +67,12 @@ using PCVMurcorWebApp.Models;
             WriteLiteral("<div class=\"container\">\n    <div class=\"row justify-content-center\">\n        <div class=\"col-4\">\n\n            ");
             EndContext();
             BeginContext(212, 1928, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8319a0c6a8454856b3192b5c4c4f99e1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1823a05d63664da299c59552e1aa4dbb", async() => {
                 BeginContext(278, 63, true);
                 WriteLiteral("\n\n                <div class=\"form-group\">\n                    ");
                 EndContext();
                 BeginContext(341, 80, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f186235acdd34c9980075dfbc5a05c23", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d3be09b6bb846a6bd5452a3683320d5", async() => {
                     BeginContext(401, 12, true);
                     WriteLiteral("Request Type");
                     EndContext();
@@ -99,7 +99,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\n                    <div class=\"col-sm-10\">\n                        <select class=\"form-control\" id=\"reqTyoe\" placeholder=\"---Select Request Type---\">\n                            ");
                 EndContext();
                 BeginContext(601, 20, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8806b116b9f14425a63e9ac0838f73fe", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d9cb4c707e59438f8903b5f91ced8593", async() => {
                     BeginContext(609, 3, true);
                     WriteLiteral("New");
                     EndContext();
@@ -119,7 +119,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\n                            ");
                 EndContext();
                 BeginContext(650, 23, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e7aefa8aa20c4bb4954a0570bee2d4dc", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5f1a66a9820c40499deee4d1b0ff3195", async() => {
                     BeginContext(658, 6, true);
                     WriteLiteral("Change");
                     EndContext();
@@ -139,7 +139,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\n                            ");
                 EndContext();
                 BeginContext(702, 27, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03c8a4b7df8843f6b3bcb1de0aa36cad", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6468a6c78c14dddb7a4815872589b35", async() => {
                     BeginContext(710, 10, true);
                     WriteLiteral("LOA(LEAVE)");
                     EndContext();
@@ -159,7 +159,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\n                            ");
                 EndContext();
                 BeginContext(758, 28, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e24024ff65224579b70d5dc8fec35cd7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65bc6020435849b5ba261aacba33ae85", async() => {
                     BeginContext(766, 11, true);
                     WriteLiteral("LOA(RETURN)");
                     EndContext();
@@ -179,7 +179,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\n                            ");
                 EndContext();
                 BeginContext(815, 23, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b33ae5a1dcac42b2a1415da52a67f470", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f7534e3cd084008b07e0928e7f37bfb", async() => {
                     BeginContext(823, 6, true);
                     WriteLiteral("Remove");
                     EndContext();
@@ -199,7 +199,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\n                        </select>\n                    </div>\n                </div>\n                <div class=\"form-group\">\n                    ");
                 EndContext();
                 BeginContext(984, 76, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6dec4a07e22c402cb227475e6f673f0c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a6e2f44865134d2488fdc0f249da5e1c", async() => {
                     BeginContext(1042, 10, true);
                     WriteLiteral("Request By");
                     EndContext();
@@ -232,7 +232,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                     ");
                 EndContext();
                 BeginContext(1323, 76, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4a99ff83c5b4940b853bf3e79ed5da7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cff6adcbb8c6452099e367d047d65c8f", async() => {
                     BeginContext(1381, 10, true);
                     WriteLiteral("Start Date");
                     EndContext();
@@ -259,7 +259,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\n                    <div class=\"col-sm-10\">\n                        <input type=\"date\" class=\"form-control\" id=\"startDate\"/>\n                    </div>\n                </div>\n                <div class=\"form-group\">\n                    ");
                 EndContext();
                 BeginContext(1636, 72, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "793cdca6651743e88e92d2660a3c1f5c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ddc333bdaeea487b95878eeda028972e", async() => {
                     BeginContext(1692, 8, true);
                     WriteLiteral("End Date");
                     EndContext();
