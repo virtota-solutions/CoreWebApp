@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PCVMurcorWebApp.Controllers
 {
+    [Route("Manager")]
     public class ManagerController : Controller
     {
         public IActionResult Index()
@@ -14,6 +15,18 @@ namespace PCVMurcorWebApp.Controllers
         }
 
         public IActionResult Create()
+        {
+            return View();
+        }
+
+        [Route("")]
+        public IActionResult ReviewerInfo()
+        {
+            return View();
+        }
+
+        [Route("viewform")]
+        public IActionResult ViewForm()
         {
             return View();
         }

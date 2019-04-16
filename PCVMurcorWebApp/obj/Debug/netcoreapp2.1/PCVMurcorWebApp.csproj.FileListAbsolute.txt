@@ -103,3 +103,7 @@ C:\Users\curti\Desktop\PCV\CoreWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\PC
 C:\Users\curti\Desktop\PCV\CoreWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\PCVMurcorWebApp.pdb
 C:\Users\curti\Desktop\PCV\CoreWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\PCVMurcorWebApp.csproj.CopyComplete
 C:\Users\curti\Desktop\PCV\CoreWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\PCVMurcorWebApp.csprojAssemblyReference.cache
+C:\Users\curti\Desktop\PCV\CoreWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\Razor\Views\User\ApplicationAccess.g.cshtml.cs
+C:\Users\curti\Desktop\PCV\CoreWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\Razor\Views\User\ReviewerInfo.g.cshtml.cs
+C:\Users\curti\Desktop\PCV\CoreWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Manager\ViewForm.g.cshtml.cs
+C:\Users\curti\Desktop\PCV\CoreWebApp\PCVMurcorWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Manager\Index.g.cshtml.cs

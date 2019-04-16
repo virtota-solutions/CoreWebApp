@@ -37,6 +37,17 @@ namespace PCVMurcorWebApp.Controllers
             return View();
         }
 
+        [Route ("reviewerinfo")]
+        public IActionResult ReviewerInfo()
+        {
+            return View();
+        }
+        [Route("applicationaccess")]
+        public IActionResult ApplicationAccess()
+        {
+            return View();
+        }
+
         [Route ("userinformation")]
         public IActionResult UserInformation(UserInfo ui)
         {
