@@ -2,6 +2,127 @@
 @{
     ViewData["Title"] = "ApplicationAccess";
 }
+<h2>Application Access</h2>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-4">
 
-<h2>ApplicationAccess</h2>
+            <form class="form-horizontal" asp-action="/User/Create" method="post">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">VMS Role/Group (based on User's Job Title)</label>
+                    <div class="col-sm-10">
+                        <div class="checkbook">
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Accounting Group</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />IT Group</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Admin Support</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Processing/Shipping Group</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Assignor</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />QC Supervisor/Lead</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Auditor</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />QC</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Client Services Dept. Mgr.</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Sales Group</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Client Services Group</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Status Group</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Commercial Group</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Vendor Relations Group</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Contractor QC</label>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Copy Additional Access of:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="copy" placeholder="" />
+                    </div>
+                    <div class="col-sm-10">
+                        <label class="checkbox-inline"><input type="checkbox" value="" />PCI Access</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="" />FDIC Access</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="" />CRM Access</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Copy:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="copy" placeholder="" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">OTS Additional Access</label>
+                    <div class="col-sm-10">
+                        <div class="checkbook">
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Return Order</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Multi Assign</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Delete Order</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />To Reassign</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Recreate Order</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Appraisal Taag to Shipping</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Maintain Tag Reasons</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Maintain Clarification Reasons</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Audit Admin</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Dispute Queue Access</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">BPO Role/Group</label>
+                    <div class="col-sm-10">
+                        <div class="checkbook">
+                            <label class="checkbox-inline"><input type="checkbox" value="" />BPO Admin</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Contract QC</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />FDIC QC</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Hold Orderss</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Mark Order Shipped</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />QC (basic)</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />QC Plus</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />QC Supervisor</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />View Rules</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">LRV Role/Group</label>
+                    <div class="col-sm-10">
+                        <div class="checkbook">
+                            <label class="checkbox-inline"><input type="checkbox" value="" />LRV Admin (with all LRV special modules)</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Fannie QC (Only Fannie Queue)</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />Regular QC (Regular Review Queue)</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" />All Queues (All Queues with some special modules)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Mas500 Access (Accounting Department Only)</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="selAcc" placeholder="---Select Role---">
+                            <option>---Select Role---</option>
+                            <option>Administrator</option>
+                            <option>AP Clerk</option>
+                            <option>AP Specialist</option>
+                            <option>AR Specialist</option>
+                            <option>Other</option>
+                            <option>Senior Accountant</option>
+                            <option>Staff Accountant</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">If OTHER,</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="other" placeholder="" />
+                    </div>
+                </div>
+            </form>
+
+            <a href="/User/post">Submit</a>
+
+            <a href="/User/reviewerinfo">Next</a>
+
+        </div>
+    </div>
+</div>
