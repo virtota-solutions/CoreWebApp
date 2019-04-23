@@ -7,9 +7,18 @@ using PCVMurcorWebApp.Models;
 
 namespace PCVMurcorWebApp.Controllers
 {
+    
+
     [Route ("user")]
     public class UserController : Controller
     {
+        private readonly UserDataContext _db;
+
+        public UserController(UserDataContext db)
+        {
+            _db = db;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -17,13 +26,25 @@ namespace PCVMurcorWebApp.Controllers
 
         
 
-        [ Route ("create")]
+        [HttpGet, Route ("create")]
         public IActionResult Create()
         {
             return View();
         }
 
-        
+        [HttpPost, Route("create")]
+        public IActionResult Create(UserInfo ui)
+        {
+            if (!ModelState.IsValid)
+                return View();
+
+            ui.TodayDate = DateTime.Now;
+
+            _db.Posts.Add(ui);
+            _db.SaveChanges();
+
+            return View();
+        }
 
         [Route ("post")]
         public IActionResult Post(Create c, UserRequirements ur, UserInfo ui)
