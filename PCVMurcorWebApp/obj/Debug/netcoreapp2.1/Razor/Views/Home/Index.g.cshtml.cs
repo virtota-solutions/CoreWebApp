@@ -57,7 +57,7 @@ using PCVMurcorWebApp.Models;
             WriteLiteral("\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(12, 914, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "519aecea41de4730b35d17191fe3edd2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a4195b50b0dd4876bf168df29ca8b9e4", async() => {
                 BeginContext(18, 901, true);
                 WriteLiteral(@"
     <link rel=""stylesheet"" href=""/css/Style.css"">
@@ -84,7 +84,7 @@ using PCVMurcorWebApp.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(928, 1511, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5daf1f9ff6f94a078991b6be7f8c09e1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d92c454cb264ed79cc6bf243e4a4e4f", async() => {
                 BeginContext(934, 540, true);
                 WriteLiteral(@"
     <div class=""container"">
@@ -101,7 +101,7 @@ using PCVMurcorWebApp.Models;
                         ");
                 EndContext();
                 BeginContext(1474, 856, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "97fe52acdb86403fa813b2a27d9cc3c1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2de3bb5bf1da4fd08da8b30bdfb263d8", async() => {
                     BeginContext(1500, 823, true);
                     WriteLiteral(@"
                             <div>

@@ -65,7 +65,7 @@ using PCVMurcorWebApp.Models;
             WriteLiteral("<h2>User Information</h2>\r\n<div class=\"container\">\r\n    <div class=\"row justify-content-center\">\r\n        <div class=\"col-4\">\r\n\r\n            ");
             EndContext();
             BeginContext(255, 3425, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bcab53f3ff30428ab136e3270aed7e41", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8400d6d3833d4867aac0b52f480518f0", async() => {
                 BeginContext(334, 645, true);
                 WriteLiteral(@"
                 <div class=""form-group"">
@@ -81,7 +81,7 @@ using PCVMurcorWebApp.Models;
                             ");
                 EndContext();
                 BeginContext(979, 26, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7c311ef05bd467a9f3c1e205049c4a4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "17756b1c9543460ca29da6c954f20ecd", async() => {
                     BeginContext(987, 9, true);
                     WriteLiteral("Help Desk");
                     EndContext();
@@ -101,7 +101,7 @@ using PCVMurcorWebApp.Models;
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(1035, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1fc25daaa6ab427cb4b4f9ef40656b2b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e77606ad913419eaa778c20ae39f795", async() => {
                     BeginContext(1043, 15, true);
                     WriteLiteral("Sales Associate");
                     EndContext();
@@ -121,7 +121,7 @@ using PCVMurcorWebApp.Models;
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(1097, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a92710aedba4333a04ea809b3866859", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65497a1ae9ac4fe489bbdac17661aeab", async() => {
                     BeginContext(1105, 22, true);
                     WriteLiteral("Social Media Associate");
                     EndContext();
@@ -149,7 +149,7 @@ using PCVMurcorWebApp.Models;
                             ");
                 EndContext();
                 BeginContext(1534, 19, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5867731163f94a1ca16c3d8e4abd2af8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3c3863f1671404eb1a958a4e3b5b85c", async() => {
                     BeginContext(1542, 2, true);
                     WriteLiteral("IT");
                     EndContext();
@@ -169,7 +169,7 @@ using PCVMurcorWebApp.Models;
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(1583, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b62174c17e2c447080c61f0c74bb06cf", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9bf93460eece4fae8633baab0a96eb75", async() => {
                     BeginContext(1591, 23, true);
                     WriteLiteral("Business Administration");
                     EndContext();
@@ -189,7 +189,7 @@ using PCVMurcorWebApp.Models;
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(1653, 33, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6dbdfa7cdd9c458e9e5f8df0a1cc7ce8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8693f312e0764acc956d49ea38abb3ed", async() => {
                     BeginContext(1661, 16, true);
                     WriteLiteral("Public Relations");
                     EndContext();
@@ -217,7 +217,7 @@ using PCVMurcorWebApp.Models;
                             ");
                 EndContext();
                 BeginContext(2078, 23, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4116e1eb83ff4727a86e0a11b63f7299", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f8c1890c72ea412aa9b376dd793d4591", async() => {
                     BeginContext(2086, 6, true);
                     WriteLiteral("Pomona");
                     EndContext();
@@ -237,7 +237,7 @@ using PCVMurcorWebApp.Models;
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(2131, 28, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c537cbc29c554b728fac0f6afffdef35", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ba986ba2f9aa4822a710228c9ea1a57e", async() => {
                     BeginContext(2139, 11, true);
                     WriteLiteral("Diamond Bar");
                     EndContext();
@@ -257,7 +257,7 @@ using PCVMurcorWebApp.Models;
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(2189, 28, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d91175a81ce342c397def42f80014e94", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f61a527dd6ef4e828063ce98f222ed5e", async() => {
                     BeginContext(2197, 11, true);
                     WriteLiteral("Los Angeles");
                     EndContext();
@@ -285,7 +285,7 @@ using PCVMurcorWebApp.Models;
                             ");
                 EndContext();
                 BeginContext(2615, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "70908cb190f34958828eaa4071e091d5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4bad5cfbdb254d2d8729cbd6380748c4", async() => {
                     BeginContext(2623, 17, true);
                     WriteLiteral("Shatakshi Shradha");
                     EndContext();
@@ -305,7 +305,7 @@ using PCVMurcorWebApp.Models;
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(2679, 31, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d9da25d8f9644d3a84440bae60718f56", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fa0a240f9e1a4e9fb58bdf2597b17655", async() => {
                     BeginContext(2687, 14, true);
                     WriteLiteral("Meera Bhandare");
                     EndContext();
@@ -325,7 +325,7 @@ using PCVMurcorWebApp.Models;
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(2740, 30, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8373fdddf4324817a9a93f2e485170d4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "021dfd9a854e484091772aa7538c0775", async() => {
                     BeginContext(2748, 13, true);
                     WriteLiteral("Curtis Horton");
                     EndContext();
@@ -345,7 +345,7 @@ using PCVMurcorWebApp.Models;
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(2800, 31, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4fcca4a4519040c3b45b2c6ee2794af7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d98a89a3915a4e719acd906ff620349c", async() => {
                     BeginContext(2808, 14, true);
                     WriteLiteral("Ahmed Tageldin");
                     EndContext();
@@ -365,7 +365,7 @@ using PCVMurcorWebApp.Models;
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(2861, 29, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b57c79f4482a4200821d92112ce8e5ac", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e1f30f6942344105a56bc32819a8ff2f", async() => {
                     BeginContext(2869, 12, true);
                     WriteLiteral("Vincent Tran");
                     EndContext();

@@ -20,7 +20,7 @@ namespace PCVMurcorWebApp.Models
             {
                 if (_key == null)
                 {
-                    _key = Regex.Replace(RequestBy.ToLower(), "[^a-z0-9]", "-");
+                    //_key = Regex.Replace(RequestBy.ToLower(), "[^a-z0-9]", "-");
                 }
                 return _key;
             }

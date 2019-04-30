@@ -63,7 +63,7 @@ using PCVMurcorWebApp.Models;
             WriteLiteral("\r\n<h2>Requirements</h2>\r\n<div class=\"container\">\r\n    <div class=\"row justify-content-center\">\r\n        <div class=\"col-4\">\r\n\r\n            ");
             EndContext();
             BeginContext(235, 5422, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6074e2cf983346c2aa9c7e0e13fd3aa2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "34813dc5f1d641bd842726e5e022934d", async() => {
                 BeginContext(305, 5345, true);
                 WriteLiteral(@"
                 <div class=""form-group"">

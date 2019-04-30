@@ -74,6 +74,18 @@ namespace PCVMurcorWebApp.Controllers
         {
             return View();
         }
-        
+
+        [Route("viewform")]
+        public IActionResult ViewForm()
+        {
+            return View();
+        }
+
+        [Route("comments")]
+        public IActionResult Comments()
+        {
+            return View();
+        }
+
     }
 }

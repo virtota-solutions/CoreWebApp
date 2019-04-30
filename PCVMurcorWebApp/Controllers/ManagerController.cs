@@ -25,16 +25,6 @@ namespace PCVMurcorWebApp.Controllers
             return View();
         }
 
-        [Route("viewform")]
-        public IActionResult ViewForm()
-        {
-            return View();
-        }
-
-        [Route("blog/{year:int}/{month:int}/{key}")]
-        public IActionResult Post(int year, int month, string key)
-        {
-            return View();
-        }
+        
     }
 }
