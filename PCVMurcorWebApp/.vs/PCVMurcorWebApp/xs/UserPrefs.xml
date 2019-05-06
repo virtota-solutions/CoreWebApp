@@ -1,6 +1,11 @@
 ﻿<Properties StartupConfiguration="{3A3496F3-7057-4AAB-8B52-D94B7599E396}|Default">
   <MonoDevelop.Ide.ItemProperties.PCVMurcorWebApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/User/UserInformation.cshtml">
+    <Files>
+      <File FileName="Views/User/create.cshtml" Line="40" Column="120" />
+      <File FileName="Views/User/UserInformation.cshtml" Line="15" Column="106" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
