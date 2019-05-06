@@ -47,7 +47,7 @@ namespace PCVMurcorWebApp.Controllers
         }
 
         [Route ("post")]
-        public IActionResult Post(Create c, UserRequirements ur, UserInfo ui)
+        public IActionResult Post(UserTableCreate c, UserRequirements ur, UserInfo ui)
         {
             return View();
         }

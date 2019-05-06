@@ -26,6 +26,8 @@ namespace PCVMurcorWebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<UserDataContext>(_ => new UserDataContext(Configuration["ConnectionStrings:DefaultConnection"]));
+            services.Add(new ServiceDescriptor(typeof(UserDataContext), new UserDataContext(connectionString: Configuration.GetConnectionString("DefaultConnection"))));
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -33,11 +35,7 @@ namespace PCVMurcorWebApp
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<UserDataContext>(options =>
-            {
-                var connectionString = Configuration.GetConnectionString("UserDataContext");
-                options.UseSqlServer(connectionString);
-            });
+          
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
