@@ -12,12 +12,7 @@ namespace PCVMurcorWebApp.Controllers
     [Route ("user")]
     public class UserController : Controller
     {
-        private readonly UserDataContext _db;
-
-        public UserController(UserDataContext db)
-        {
-            _db = db;
-        }
+        
 
         public IActionResult Index()
         {
@@ -39,9 +34,7 @@ namespace PCVMurcorWebApp.Controllers
                 return View();
 
             ui.TodayDate = DateTime.Now;
-
-            _db.Posts.Add(ui);
-            _db.SaveChanges();
+            
 
             return View();
         }

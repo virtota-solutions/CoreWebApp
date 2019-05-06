@@ -12537,11 +12537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\curti\\Desktop\\PCV\\CoreWebApp\\PCVMurcorWebApp\\PCVMurcorWebApp.csproj",
+      "projectUniqueName": "C:\\Users\\curti\\Desktop\\SeniorProjectFrontEnd\\CoreWebApp\\PCVMurcorWebApp\\PCVMurcorWebApp.csproj",
       "projectName": "PCVMurcorWebApp",
-      "projectPath": "C:\\Users\\curti\\Desktop\\PCV\\CoreWebApp\\PCVMurcorWebApp\\PCVMurcorWebApp.csproj",
+      "projectPath": "C:\\Users\\curti\\Desktop\\SeniorProjectFrontEnd\\CoreWebApp\\PCVMurcorWebApp\\PCVMurcorWebApp.csproj",
       "packagesPath": "C:\\Users\\curti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\curti\\Desktop\\PCV\\CoreWebApp\\PCVMurcorWebApp\\obj\\",
+      "outputPath": "C:\\Users\\curti\\Desktop\\SeniorProjectFrontEnd\\CoreWebApp\\PCVMurcorWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
