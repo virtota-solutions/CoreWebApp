@@ -1,10 +1,27 @@
 ﻿<Properties StartupConfiguration="{3A3496F3-7057-4AAB-8B52-D94B7599E396}|Default">
   <MonoDevelop.Ide.ItemProperties.PCVMurcorWebApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/User/UserInformation.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/User/ApplicationAccess.cshtml">
     <Files>
-      <File FileName="Views/User/create.cshtml" Line="40" Column="120" />
-      <File FileName="Views/User/UserInformation.cshtml" Line="15" Column="106" />
+      <File FileName="Views/User/create.cshtml" Line="84" Column="57" />
+      <File FileName="Views/User/UserInformation.cshtml" Line="76" Column="57" />
+      <File FileName="Views/User/Requirements.cshtml" Line="74" Column="57" />
+      <File FileName="Views/User/ReviewerInfo.cshtml" Line="75" Column="57" />
+      <File FileName="Views/User/ApplicationAccess.cshtml" Line="75" Column="57" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PCVMurcorWebApp" expanded="True">
+            <Node name="PCVMurcorWebApp" expanded="True">
+              <Node name="Views" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
