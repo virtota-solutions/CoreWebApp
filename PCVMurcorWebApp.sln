@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCVMurcorWebApp", "PCVMurcorWebApp\PCVMurcorWebApp.csproj", "{AE619557-64F5-4E1E-9DF7-BDCA6C349E77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCVMurcorWebApp", "PCVMurcorWebApp\PCVMurcorWebApp.csproj", "{513587BE-B4C6-4D68-BE8E-A3F4B1780EE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AE619557-64F5-4E1E-9DF7-BDCA6C349E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE619557-64F5-4E1E-9DF7-BDCA6C349E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE619557-64F5-4E1E-9DF7-BDCA6C349E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE619557-64F5-4E1E-9DF7-BDCA6C349E77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{513587BE-B4C6-4D68-BE8E-A3F4B1780EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{513587BE-B4C6-4D68-BE8E-A3F4B1780EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{513587BE-B4C6-4D68-BE8E-A3F4B1780EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{513587BE-B4C6-4D68-BE8E-A3F4B1780EE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {22771656-DB30-4CF7-9D0A-27545923467B}
+		SolutionGuid = {E36A0F53-138C-4FAB-BE5E-88054B4822F2}
 	EndGlobalSection
 EndGlobal

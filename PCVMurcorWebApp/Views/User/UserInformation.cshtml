@@ -1,4 +1,4 @@
-﻿@model PCVMurcorWebApp.Models.Create
+﻿@model PCVMurcorWebApp.Models.UserTable
 @{
     ViewData["Title"] = "UserInformation";
     Layout = "_Layout";
@@ -8,15 +8,21 @@
     <div class="row justify-content-center">
         <div class="col-4">
 
-            <form class="form-horizontal" asp-action="/User/UserInformation" method="post">
+            <form class="form-horizontal" asp-action="/User/UserInformation" asp-controller="UserTable" method="post">
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="Name">Name:</label>
+                    <label class="control-label col-sm-2"  asp-for="FirstName">First Name:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="email" placeholder="Full Name with Initial">
+                        <input type="text" class="form-control" id="first" asp-for="FirstName" placeholder="First Name">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="pwd">Job Title</label>
+                    <label class="control-label col-sm-2" asp-for="LastName">Last Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="last"  asp-for="LastName" placeholder="Last Name">
+                    </div>
+                </div>
+               @*<div class="form-group">
+                    <label class="control-label col-sm-2" asp-for="">Job Title</label>
                     <div class="col-sm-10">
                         <select class="form-control" id="selJob" placeholder="---Select Job Title---">
                             <option>Help Desk</option>
@@ -24,11 +30,11 @@
                             <option>Social Media Associate</option>
                         </select>
                     </div>
-                </div>
+                </div> *@
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="pwd">Department</label>
+                    <label class="control-label col-sm-2" asp-for="Department">Department</label>
                     <div class="col-sm-10">
-                        <select class="form-control" id="selDept" placeholder="---Select Department---">
+                        <select class="form-control" id="selDept" asp-for="Department" placeholder="---Select Department---">
                             <option>IT</option>
                             <option>Business Administration</option>
                             <option>Public Relations</option>
@@ -36,9 +42,9 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="pwd">Office</label>
+                    <label class="control-label col-sm-2" asp-for="Office">Office</label>
                     <div class="col-sm-10">
-                        <select class="form-control" id="selOffice" placeholder="---Select Office---">
+                        <select class="form-control" id="selOffice" asp-for="Office" placeholder="---Select Office---">
                             <option>Pomona</option>
                             <option>Diamond Bar</option>
                             <option>Los Angeles</option>
@@ -46,9 +52,9 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="pwd">Manager's Name</label>
+                    <label class="control-label col-sm-2" asp-for="ManagerName">Manager's Name</label>
                     <div class="col-sm-10">
-                        <select class="form-control" id="selMng" placeholder="---Select Manager---">
+                        <select class="form-control" id="selMng" asp-for="Department" placeholder="---Select Manager---">
                             <option>Shatakshi Shradha</option>
                             <option>Meera Bhandare</option>
                             <option>Curtis Horton</option>
@@ -59,10 +65,10 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="pwd">Is he/she a manager?</label>
+                    <label class="control-label col-sm-2"asp-for="IsManager">Is he/she a manager?</label>
                     <div class="col-sm-10">
-                        <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">No</label>
+                        <label class="radio-inline"><input type="radio" asp-for="IsManager" name="optradio">Yes</label>
+                        <label class="radio-inline"><input type="radio" asp-for="IsManager" name="optradio">No</label>
                     </div>
                 </div>
 

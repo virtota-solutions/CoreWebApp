@@ -7,10 +7,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PCVMurcorWebApp.Models;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace PCVMurcorWebApp
 {
@@ -26,8 +27,6 @@ namespace PCVMurcorWebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<UserDataContext>(_ => new UserDataContext(Configuration["ConnectionStrings:DefaultConnection"]));
-            services.Add(new ServiceDescriptor(typeof(UserDataContext), new UserDataContext(connectionString: Configuration.GetConnectionString("DefaultConnection"))));
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -35,21 +34,22 @@ namespace PCVMurcorWebApp
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-          
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddDbContext<VirtotaSolutionsContext>(options => options.UseSqlServer(Configuration.GetConnectionString("VSDatabase")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
-            {
+            { 
                 app.UseDeveloperExceptionPage();
             }
             else
             {
                 app.UseExceptionHandler("/Home/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
