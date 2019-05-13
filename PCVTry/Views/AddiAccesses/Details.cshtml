@@ -1,0 +1,42 @@
+﻿@model PCVTry.Models.AddiAccess
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AddiAccess</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pci)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pci)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fdic)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fdic)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Crm)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Crm)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CopyOf)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CopyOf)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.AddiAccessId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

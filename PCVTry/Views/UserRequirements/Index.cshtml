@@ -1,0 +1,83 @@
+﻿@model IEnumerable<PCVTry.Models.UserRequirements>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FloorNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CubeNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DidNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DualMon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RemoAcc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RemoLap)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mobile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FloorNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CubeNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DidNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DualMon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RemoAcc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RemoLap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mobile)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.UserReqId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.UserReqId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.UserReqId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

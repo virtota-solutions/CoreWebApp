@@ -1,0 +1,65 @@
+﻿@model IEnumerable<PCVTry.Models.Applicationaccess>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Mas500Access)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AddAccessNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BporoleGroupNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LrvroleGroupNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OtsaccessNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VmsroleGroupNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mas500Access)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddAccessNavigation.AddiAccessId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BporoleGroupNavigation.Bpoid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LrvroleGroupNavigation.LrvId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OtsaccessNavigation.OtsAccessId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VmsroleGroupNavigation.VmsroleGroupId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AppId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AppId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AppId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

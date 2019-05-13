@@ -1,0 +1,83 @@
+﻿@model PCVTry.Models.OtsAccess
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>OtsAccess</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="OtsAccessId" class="control-label"></label>
+                <input asp-for="OtsAccessId" class="form-control" />
+                <span asp-validation-for="OtsAccessId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Return" class="control-label"></label>
+                <input asp-for="Return" class="form-control" />
+                <span asp-validation-for="Return" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MultiAssign" class="control-label"></label>
+                <input asp-for="MultiAssign" class="form-control" />
+                <span asp-validation-for="MultiAssign" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DeleteOrder" class="control-label"></label>
+                <input asp-for="DeleteOrder" class="form-control" />
+                <span asp-validation-for="DeleteOrder" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ToReassign" class="control-label"></label>
+                <input asp-for="ToReassign" class="form-control" />
+                <span asp-validation-for="ToReassign" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RecreateOrder" class="control-label"></label>
+                <input asp-for="RecreateOrder" class="form-control" />
+                <span asp-validation-for="RecreateOrder" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppraisalTagShip" class="control-label"></label>
+                <input asp-for="AppraisalTagShip" class="form-control" />
+                <span asp-validation-for="AppraisalTagShip" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaintainTagReasons" class="control-label"></label>
+                <input asp-for="MaintainTagReasons" class="form-control" />
+                <span asp-validation-for="MaintainTagReasons" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaintainClariReasons" class="control-label"></label>
+                <input asp-for="MaintainClariReasons" class="form-control" />
+                <span asp-validation-for="MaintainClariReasons" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AuditAdmin" class="control-label"></label>
+                <input asp-for="AuditAdmin" class="form-control" />
+                <span asp-validation-for="AuditAdmin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DisputeQueueAccess" class="control-label"></label>
+                <input asp-for="DisputeQueueAccess" class="form-control" />
+                <span asp-validation-for="DisputeQueueAccess" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

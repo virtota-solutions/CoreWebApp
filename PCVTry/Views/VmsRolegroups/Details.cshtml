@@ -1,0 +1,108 @@
+﻿@model PCVTry.Models.VmsRolegroup
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VmsRolegroup</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountGroup)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AccountGroup)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminSupport)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AdminSupport)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Assignor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Assignor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Auditor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Auditor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CliServiDeptMgr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CliServiDeptMgr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CliServiGroup)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CliServiGroup)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CommercialGroup)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CommercialGroup)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ContractorQc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ContractorQc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itgroup)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itgroup)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProcessingShippingGroup)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProcessingShippingGroup)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.QcsupervisorLead)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.QcsupervisorLead)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Qc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Qc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SalesGroup)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SalesGroup)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StatusGroup)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StatusGroup)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VendorRelationsGroup)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VendorRelationsGroup)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.VmsroleGroupId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

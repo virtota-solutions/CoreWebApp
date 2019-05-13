@@ -1,0 +1,74 @@
+﻿@model PCVTry.Models.BpoRolegroup
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>BpoRolegroup</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Bpoid" />
+            <div class="form-group">
+                <label asp-for="Bpoadmin" class="control-label"></label>
+                <input asp-for="Bpoadmin" class="form-control" />
+                <span asp-validation-for="Bpoadmin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractQc" class="control-label"></label>
+                <input asp-for="ContractQc" class="form-control" />
+                <span asp-validation-for="ContractQc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FdicQc" class="control-label"></label>
+                <input asp-for="FdicQc" class="form-control" />
+                <span asp-validation-for="FdicQc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HoldOrders" class="control-label"></label>
+                <input asp-for="HoldOrders" class="form-control" />
+                <span asp-validation-for="HoldOrders" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MarkOrdersShipped" class="control-label"></label>
+                <input asp-for="MarkOrdersShipped" class="form-control" />
+                <span asp-validation-for="MarkOrdersShipped" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QcBasic" class="control-label"></label>
+                <input asp-for="QcBasic" class="form-control" />
+                <span asp-validation-for="QcBasic" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QcPlus" class="control-label"></label>
+                <input asp-for="QcPlus" class="form-control" />
+                <span asp-validation-for="QcPlus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QcSupervisor" class="control-label"></label>
+                <input asp-for="QcSupervisor" class="form-control" />
+                <span asp-validation-for="QcSupervisor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ViewRules" class="control-label"></label>
+                <input asp-for="ViewRules" class="form-control" />
+                <span asp-validation-for="ViewRules" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

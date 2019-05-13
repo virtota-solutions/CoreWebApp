@@ -1,0 +1,48 @@
+﻿@model PCVTry.Models.Requestinfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Requestinfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TodayDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TodayDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RequestType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestByName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RequestByName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EffectiveStart)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EffectiveStart)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EffectiveEnd)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EffectiveEnd)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.RequestId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

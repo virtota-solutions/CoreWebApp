@@ -1,0 +1,42 @@
+﻿@model PCVTry.Models.LrvRolegroup
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LrvRolegroup</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LrvAdmin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LrvAdmin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FannieQc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FannieQc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RegularQc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RegularQc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AllQueues)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AllQueues)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.LrvId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

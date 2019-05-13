@@ -1,0 +1,54 @@
+﻿@model PCVTry.Models.Applicationaccess
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Applicationaccess</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Mas500Access)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Mas500Access)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AddAccessNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AddAccessNavigation.AddiAccessId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BporoleGroupNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BporoleGroupNavigation.Bpoid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LrvroleGroupNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LrvroleGroupNavigation.LrvId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OtsaccessNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OtsaccessNavigation.OtsAccessId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VmsroleGroupNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VmsroleGroupNavigation.VmsroleGroupId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.AppId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

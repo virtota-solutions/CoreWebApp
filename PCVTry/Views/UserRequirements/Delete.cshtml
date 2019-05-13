@@ -1,0 +1,75 @@
+﻿@model PCVTry.Models.UserRequirements
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>UserRequirements</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FloorNum)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FloorNum)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CubeNum)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CubeNum)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DidNum)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DidNum)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DualMon)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DualMon)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RemoAcc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RemoAcc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RemoLap)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RemoLap)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Mobile)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Mobile)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserStatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserStatus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="UserReqId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

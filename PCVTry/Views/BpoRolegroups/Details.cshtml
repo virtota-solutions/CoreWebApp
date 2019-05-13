@@ -1,0 +1,72 @@
+﻿@model PCVTry.Models.BpoRolegroup
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BpoRolegroup</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Bpoadmin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Bpoadmin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ContractQc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ContractQc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FdicQc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FdicQc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HoldOrders)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HoldOrders)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MarkOrdersShipped)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MarkOrdersShipped)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.QcBasic)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.QcBasic)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.QcPlus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.QcPlus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.QcSupervisor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.QcSupervisor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ViewRules)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ViewRules)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Bpoid">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
