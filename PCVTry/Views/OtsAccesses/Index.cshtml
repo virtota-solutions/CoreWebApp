@@ -1,0 +1,89 @@
+﻿@model IEnumerable<PCVTry.Models.OtsAccess>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Return)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MultiAssign)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeleteOrder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ToReassign)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RecreateOrder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppraisalTagShip)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaintainTagReasons)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaintainClariReasons)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AuditAdmin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DisputeQueueAccess)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Return)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MultiAssign)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeleteOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToReassign)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecreateOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppraisalTagShip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaintainTagReasons)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaintainClariReasons)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AuditAdmin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DisputeQueueAccess)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.OtsAccessId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.OtsAccessId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.OtsAccessId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

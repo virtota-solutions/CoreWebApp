@@ -1,0 +1,74 @@
+﻿@model PCVTry.Models.UserRequirements
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>UserRequirements</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="UserReqId" />
+            <div class="form-group">
+                <label asp-for="FloorNum" class="control-label"></label>
+                <input asp-for="FloorNum" class="form-control" />
+                <span asp-validation-for="FloorNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CubeNum" class="control-label"></label>
+                <input asp-for="CubeNum" class="form-control" />
+                <span asp-validation-for="CubeNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DidNum" class="control-label"></label>
+                <input asp-for="DidNum" class="form-control" />
+                <span asp-validation-for="DidNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DualMon" class="control-label"></label>
+                <input asp-for="DualMon" class="form-control" />
+                <span asp-validation-for="DualMon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RemoAcc" class="control-label"></label>
+                <input asp-for="RemoAcc" class="form-control" />
+                <span asp-validation-for="RemoAcc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RemoLap" class="control-label"></label>
+                <input asp-for="RemoLap" class="form-control" />
+                <span asp-validation-for="RemoLap" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mobile" class="control-label"></label>
+                <input asp-for="Mobile" class="form-control" />
+                <span asp-validation-for="Mobile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserStatus" class="control-label"></label>
+                <input asp-for="UserStatus" class="form-control" />
+                <span asp-validation-for="UserStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

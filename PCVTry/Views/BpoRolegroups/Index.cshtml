@@ -1,0 +1,83 @@
+﻿@model IEnumerable<PCVTry.Models.BpoRolegroup>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Bpoadmin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContractQc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FdicQc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HoldOrders)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MarkOrdersShipped)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QcBasic)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QcPlus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QcSupervisor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ViewRules)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bpoadmin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContractQc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FdicQc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoldOrders)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MarkOrdersShipped)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QcBasic)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QcPlus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QcSupervisor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ViewRules)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Bpoid">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Bpoid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Bpoid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

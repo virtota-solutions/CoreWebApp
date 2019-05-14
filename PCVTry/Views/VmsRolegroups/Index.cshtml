@@ -1,0 +1,119 @@
+﻿@model IEnumerable<PCVTry.Models.VmsRolegroup>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdminSupport)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Assignor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Auditor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CliServiDeptMgr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CliServiGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CommercialGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContractorQc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Itgroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProcessingShippingGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QcsupervisorLead)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Qc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalesGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VendorRelationsGroup)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountGroup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdminSupport)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Assignor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Auditor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CliServiDeptMgr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CliServiGroup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommercialGroup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContractorQc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Itgroup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProcessingShippingGroup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QcsupervisorLead)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SalesGroup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusGroup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VendorRelationsGroup)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.VmsroleGroupId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.VmsroleGroupId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.VmsroleGroupId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,45 @@
+﻿@model PCVTry.Models.LrvRolegroup
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>LrvRolegroup</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LrvAdmin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LrvAdmin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FannieQc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FannieQc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RegularQc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RegularQc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AllQueues)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AllQueues)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="LrvId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

@@ -1,0 +1,81 @@
+﻿@model PCVTry.Models.OtsAccess
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>OtsAccess</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Return)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Return)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MultiAssign)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MultiAssign)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DeleteOrder)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DeleteOrder)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ToReassign)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ToReassign)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RecreateOrder)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RecreateOrder)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AppraisalTagShip)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AppraisalTagShip)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MaintainTagReasons)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MaintainTagReasons)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MaintainClariReasons)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MaintainClariReasons)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AuditAdmin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AuditAdmin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DisputeQueueAccess)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DisputeQueueAccess)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="OtsAccessId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

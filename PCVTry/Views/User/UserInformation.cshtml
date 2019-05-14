@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewData["Title"] = "UserInformation";
+}
+
+<h2>User Information</h2>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-4">
+
+            <form class="form-horizontal" asp-action="/User/UserInformation" method="post">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="Name">Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="email" placeholder="Full Name with Initial">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Job Title</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="selJob" placeholder="---Select Job Title---">
+                            <option>Help Desk</option>
+                            <option>Sales Associate</option>
+                            <option>Social Media Associate</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Department</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="selDept" placeholder="---Select Department---">
+                            <option>IT</option>
+                            <option>Business Administration</option>
+                            <option>Public Relations</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Office</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="selOffice" placeholder="---Select Office---">
+                            <option>Pomona</option>
+                            <option>Diamond Bar</option>
+                            <option>Los Angeles</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Manager's Name</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="selMng" placeholder="---Select Manager---">
+                            <option>Shatakshi Shradha</option>
+                            <option>Meera Bhandare</option>
+                            <option>Curtis Horton</option>
+                            <option>Ahmed Tageldin</option>
+                            <option>Vincent Tran</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Is he/she a manager?</label>
+                    <div class="col-sm-10">
+                        <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Next</button>
+                    </div>
+                </div>
+            </form>
+            <a href="/User/UserRequirementsCreate">Next</a>
+        </div>
+        <div class="col-4">
+
+        </div>
+    </div>
+</div>
+

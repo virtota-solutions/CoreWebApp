@@ -1,0 +1,78 @@
+﻿@model PCVTry.Models.OtsAccess
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OtsAccess</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Return)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Return)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MultiAssign)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MultiAssign)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DeleteOrder)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DeleteOrder)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ToReassign)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ToReassign)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RecreateOrder)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RecreateOrder)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AppraisalTagShip)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AppraisalTagShip)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MaintainTagReasons)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MaintainTagReasons)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MaintainClariReasons)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MaintainClariReasons)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AuditAdmin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AuditAdmin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DisputeQueueAccess)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DisputeQueueAccess)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.OtsAccessId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
